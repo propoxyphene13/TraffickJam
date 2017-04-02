@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">TraffickJam</string>
+
+
+    <string name="xmltxt_main_traffickJamBanner">Image of the Traffick Jam banner</string>
+
+    <string name="xmltxt_main_missionStatementTitle">Our Mission</string>
+    <string name="xmltxt_main_missionStatement">Traffick Jam is a self-sustaining team of Mercer Marketing students whose purpose is to teach Macon how to drive out sex trafficking.</string>
+
+
+
 </resources>

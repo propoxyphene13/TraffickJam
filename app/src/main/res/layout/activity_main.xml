@@ -1,18 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
     tools:context="com.traffickjamgeorgia.traffickjam.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/traffickJamBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/xmltxt_main_traffickJamBanner"
+        android:src="@drawable/BannerImg"
+        />
+
+
+    <TableRow
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/missionStatementTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="@string/xmltxt_main_missionStatementTitle"
+            />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--need to fix text width... somehow-->
+        <TextView
+            android:id="@+id/missionStatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/xmltxt_main_missionStatement"
+            />
+
+<!--Use side-by-side in layout, not vertical
+
+        <TextView
+            android:id=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xmltxt_main_howCanYouHelp"
+            />
+
+        <TextView
+            android:id=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xmltxt_main_currentEvents"
+            />
+-->
+    </TableRow>
+
+    <!-- next two columns from webpage-->
+
+</TableLayout>
