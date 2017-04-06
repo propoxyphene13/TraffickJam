@@ -14,7 +14,7 @@
     <string name="xmltxt_main_howCanYouHelp2">Proceeds from purchases directly go towards educating a teen student about sex trafficking.  For every $5 spent in our store, you are providing crucial education for one student.</string>
 
     <string name="xmltxt_main_currentEventsTitle">Current Events</string>
-    <string name="xmltxt_main_currentEvents">Click Here to see out Current Events</string>
+    <string name="xmltxt_main_currentEvents">Click Here to see our Current Events</string>
 
 
     <string name="xmltxt_settings_title">Traffick Jam Settings</string>
@@ -24,6 +24,9 @@
     <string name="xmltxt_settings_eng">English</string>
     <string name="xmltxt_settings_esp">Spanish</string>
     <string name="xmltxt_settings_por">Portuguese</string>
+    <string name="xmltxt_settings_deu">German</string>
+    <string name="xmltxt_settings_zho">Chinese</string>
+    <string name="xmltxt_settings_jpn">Japanese</string>
 
 
 </resources>
