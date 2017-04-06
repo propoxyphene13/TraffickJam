@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_array">
+        <item name="eng">@string/xmltxt_settings_eng</item>
+        <item name="esp">@string/xmltxt_settings_esp</item>
+        <item name="por">@string/xmltxt_settings_por</item>
+    </string-array>
+
+
+    <string-array name="language_val_array">
+        <item name="eng">1</item>
+        <item name="esp">2</item>
+        <item name="por">3</item>
+    </string-array>
+
+</resources>

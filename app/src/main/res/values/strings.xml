@@ -5,8 +5,25 @@
     <string name="xmltxt_main_traffickJamBanner">Image of the Traffick Jam banner</string>
 
     <string name="xmltxt_main_missionStatementTitle">Our Mission</string>
-    <string name="xmltxt_main_missionStatement">Traffick Jam is a self-sustaining team of Mercer Marketing students whose purpose is to teach Macon how to drive out sex trafficking.</string>
+    <string name="xmltxt_main_missionStatement1">Traffick Jam is a self-sustaining team of Mercer Marketing students whose purpose is to teach Macon how to drive out sex trafficking.</string>
+    <string name="xmltxt_main_missionStatement2">Our program is based on an interactive curriculum that is split into four different sections: Realize, Recognize, React, and Raise Awareness.</string>
 
+
+    <string name="xmltxt_main_howCanYouHelpTitle">How Can You Help?</string>
+    <string name="xmltxt_main_howCanYouHelp1">Traffick Jam’s work is funded by creating and selling objects of value and hosting events that resonate with people who are passionate about driving out sex trafficking.</string>
+    <string name="xmltxt_main_howCanYouHelp2">Proceeds from purchases directly go towards educating a teen student about sex trafficking.  For every $5 spent in our store, you are providing crucial education for one student.</string>
+
+    <string name="xmltxt_main_currentEventsTitle">Current Events</string>
+    <string name="xmltxt_main_currentEvents">Click Here to see out Current Events</string>
+
+
+    <string name="xmltxt_settings_title">Traffick Jam Settings</string>
+    <string name="xmltxt_settings_languageTitle">Language</string>
+    <string name="xmltxt_settings_languageSummary">Choose your language</string>
+
+    <string name="xmltxt_settings_eng">English</string>
+    <string name="xmltxt_settings_esp">Spanish</string>
+    <string name="xmltxt_settings_por">Portuguese</string>
 
 
 </resources>
