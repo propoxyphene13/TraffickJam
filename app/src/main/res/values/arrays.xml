@@ -12,13 +12,13 @@
 
 
     <string-array name="language_val_array">
-        <item name="sys">0</item>
-        <item name="eng">1</item>
-        <item name="esp">2</item>
-        <item name="por">3</item>
-        <item name="deu">4</item>
-        <item name="zho">5</item>
-        <item name="jpn">6</item>
+        <item name="sys">default</item>
+        <item name="eng">en</item>
+        <item name="esp">es</item>
+        <item name="por">pt</item>
+        <item name="deu">de</item>
+        <item name="zho">zh</item>
+        <item name="jpn">ja</item>
     </string-array>
 
 </resources>

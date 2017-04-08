@@ -3,11 +3,11 @@
 <PreferenceCategory
     android:title="@string/xmltxt_settings_title">
 
-    <EditTextPreference
+    <ListPreference
         android:title="@string/xmltxt_settings_languageTitle"
         android:summary="@string/xmltxt_settings_languageSummary"
         android:key="appLang"
-        android:defaultValue="1"
+        android:defaultValue="0"
         android:entries="@array/language_array"
         android:entryValues="@array/language_val_array"/>
 

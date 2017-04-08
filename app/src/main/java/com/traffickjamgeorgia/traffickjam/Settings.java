@@ -19,6 +19,7 @@ public class Settings extends AppCompatActivity {
         PrefsFrag settingsPrefsFragment = new PrefsFrag();
         ft.replace(android.R.id.content, settingsPrefsFragment);
         ft.commit();
+
     }
 
 
@@ -32,4 +33,5 @@ public class Settings extends AppCompatActivity {
             addPreferencesFromResource(R.xml.settings);
         }
     }
+
 }
