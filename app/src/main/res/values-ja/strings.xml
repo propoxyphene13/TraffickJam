@@ -1,4 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+
+    <string name="xmltxt_main_traffickJamBanner">Traffick Jamバナーの画像</string>
+
+    <string name="xmltxt_main_missionStatementTitle">我々の使命</string>
+    <string name="xmltxt_main_missionStatement1">Traffick Jamはマーサーマーケティングの学生の自立的なチームであり、その目的はマコンにセックスの売春を終わらせる方法を教えることです。</string>
+    <string name="xmltxt_main_missionStatement2">私たちのプログラムは、4つのセクションに分かれているインタラクティブなカリキュラムに基づいています：気付く、認識、反応、意識向上。</string>
+
+
+    <string name="xmltxt_main_howCanYouHelpTitle">あなたはどのようにして助けますか？</string>
+    <string name="xmltxt_main_howCanYouHelp1">Traffick Jam’sは、性的人身売買を終わらせることに情熱を持っている人々のために、物を作り、販売し、イベントを開催することによって資金提供を受けています。</string>
+    <string name="xmltxt_main_howCanYouHelp2">セールスの収入は、10代の学生にセックス・トラフィッキングについて教育する方向に向かいます。 あなたが店で使うあらゆる$ 5、あなたは一人の学生のための重要な教育を提供しています。</string>
+
+    <string name="xmltxt_main_currentEventsTitle">時事問題</string>
+    <string name="xmltxt_main_currentEvents">現在のイベントを見るには、ここをクリックしてください</string>
+
+
+    <string name="xmltxt_settings_title">Traffick Jamの設定</string>
+    <string name="xmltxt_settings_languageTitle">言語</string>
+    <string name="xmltxt_settings_languageSummary">言語を選んでください</string>
+
+
+
+    <string name="xmltxt_settings_sys">デフォルト</string>
 </resources>

@@ -21,12 +21,13 @@
     <string name="xmltxt_settings_languageTitle">Language</string>
     <string name="xmltxt_settings_languageSummary">Choose your language</string>
 
+    <string name="xmltxt_settings_sys">Default</string>
     <string name="xmltxt_settings_eng">English</string>
-    <string name="xmltxt_settings_esp">Spanish</string>
-    <string name="xmltxt_settings_por">Portuguese</string>
-    <string name="xmltxt_settings_deu">German</string>
-    <string name="xmltxt_settings_zho">Chinese</string>
-    <string name="xmltxt_settings_jpn">Japanese</string>
+    <string name="xmltxt_settings_esp">Español</string>
+    <string name="xmltxt_settings_por">Português</string>
+    <string name="xmltxt_settings_deu">Deutsche</string>
+    <string name="xmltxt_settings_zho">中文</string>
+    <string name="xmltxt_settings_jpn">日本語</string>
 
 
 </resources>

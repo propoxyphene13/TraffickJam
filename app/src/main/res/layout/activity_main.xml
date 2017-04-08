@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:contentDescription="@string/xmltxt_main_traffickJamBanner"
-        android:src="@drawable/BannerImg"
+        android:src="@drawable/bannerimg"
         />
 
 <!-- Using a table just in case we need to stick arrows on either side of the text -->

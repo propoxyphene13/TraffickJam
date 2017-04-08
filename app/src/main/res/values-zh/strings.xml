@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+
+    <string name="xmltxt_main_traffickJamBanner">Traffick Jam横幅的形象</string>
+
+    <string name="xmltxt_main_missionStatementTitle">我们的任务</string>
+    <string name="xmltxt_main_missionStatement1">Traffick Jam是一个自我维持的美世营销学生团队，其目的是教授梅肯如何结束性贩运。</string>
+    <string name="xmltxt_main_missionStatement2">我们的课程是基于互动课程，分为四个不同部分：实现，认可，反应和提高意识。</string>
+
+
+    <string name="xmltxt_main_howCanYouHelpTitle">你如何帮助？</string>
+    <string name="xmltxt_main_howCanYouHelp1">Traffick Jam的资金来自于为热爱停止性贩运的人们创建和销售物品和举办活动。</string>
+    <string name="xmltxt_main_howCanYouHelp2">销售收入用于教育青少年学生了解性贩卖。 对于我们店内每5美元，您为一名学生提供重要的教育。</string>
+
+    <string name="xmltxt_main_currentEventsTitle">现在发生的事</string>
+    <string name="xmltxt_main_currentEvents">点击这里查看我们的当前活动</string>
+
+
+    <string name="xmltxt_settings_title">Traffick Jam程序设置</string>
+    <string name="xmltxt_settings_languageTitle">语言</string>
+    <string name="xmltxt_settings_languageSummary">选择你的语言</string>
+
+
+    <string name="xmltxt_settings_sys">默认</string>
 </resources>

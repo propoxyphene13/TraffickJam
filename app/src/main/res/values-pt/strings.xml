@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="xmltxt_main_traffickJamBanner">Imagem da bandeira Traffick Jam</string>
+
+    <string name="xmltxt_main_missionStatementTitle">Nossa missão</string>
+    <string name="xmltxt_main_missionStatement1">Traffick Jam é uma equipe auto-sustentada de estudantes Mercer Marketing cujo objetivo é ensinar Macon como expulsar o tráfico sexual.</string>
+    <string name="xmltxt_main_missionStatement2">Nosso programa é baseado em um currículo interativo que é dividido em quatro seções diferentes: Realizar, Reconhecer, Reagir e Aumentar a Consciência.</string>
+
+
+    <string name="xmltxt_main_howCanYouHelpTitle">Como você pode ajudar?</string>
+    <string name="xmltxt_main_howCanYouHelp1">O trabalho de Traffick Jam é financiado criando e vendendo objetos de valor e hospedando eventos que ressoam com pessoas que são apaixonadas por expulsar o tráfico sexual.</string>
+    <string name="xmltxt_main_howCanYouHelp2">Os rendimentos das compras vão diretamente para educar um estudante adolescente sobre o tráfico do sexo.  Por cada US $5 gasto em nossa loja, você está fornecendo educação crucial para um aluno.</string>
+
+    <string name="xmltxt_main_currentEventsTitle">Eventos atuais</string>
+    <string name="xmltxt_main_currentEvents">Clique aqui para ver nossos eventos atuais</string>
+
+
+    <string name="xmltxt_settings_title">Configurações de Traffick Jam</string>
+    <string name="xmltxt_settings_languageTitle">Língua</string>
+    <string name="xmltxt_settings_languageSummary">Escolha o seu idioma</string>
+
+    <string name="xmltxt_settings_sys">Padrão</string>
+
 </resources>
