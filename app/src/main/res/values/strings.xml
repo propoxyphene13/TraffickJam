@@ -30,4 +30,9 @@
     <string name="xmltxt_settings_jpn">日本語</string>
 
 
+    <!-- Strings below this need to be translated -->
+
+    <string name="xmltxt_contact_titleText">To find out how you can help traffick jam drive out sex trafficking, please contact us. We can use the help.</string>
+    
+    
 </resources>

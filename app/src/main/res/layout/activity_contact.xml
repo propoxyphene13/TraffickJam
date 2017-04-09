@@ -1,13 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.traffickjamgeorgia.traffickjam.Contact">
+    tools:context="com.traffickjamgeorgia.traffickjam.Contact"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/contact_titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/xmltxt_contact_titleText"
+        />
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <ImageButton
+                android:id="@+id/fb_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnClick"
+                android:src="@drawable/facebookimg" />
+
+            <ImageButton
+                android:id="@+id/tw_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnClick"
+                android:src="@drawable/twitterimg" />
+
+            <ImageButton
+                android:id="@+id/ig_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onBtnClick"
+                android:src="@drawable/instagramimg" />
+
+        </TableRow>
+
+    </TableLayout>
 
 
 
 
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
