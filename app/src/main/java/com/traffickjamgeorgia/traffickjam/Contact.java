@@ -1,12 +1,19 @@
 package com.traffickjamgeorgia.traffickjam;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Contact extends AppCompatActivity {
+
+    private TextView contact_titleText;
 
     //Insert contact methods...
     // Text is for info
@@ -26,6 +33,8 @@ public class Contact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact);
 
+        contact_titleText=(TextView)findViewById(R.id.contact_titleText);
+
      //   Delete if not needed anymore:
      //   fb=(ImageButton)findViewById(R.id.fb_btn);
      //   tw=(ImageButton)findViewById(R.id.tw_btn);
@@ -33,24 +42,81 @@ public class Contact extends AppCompatActivity {
 
     }
 
+    @Override
+    protected void onResume(){
+        super.onResume();
+
+        //Set text within the onResume method to update for changes
+
+        //unnecessary???????  updates on own, why the F dont the others
+//        contact_titleText.setText(R.string.xmltxt_contact_titleText);
+
+    }
+
     public void onBtnClick(View v) {
 
-        // http://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app
+
 
         switch (v.getId()) {
             case R.id.fb_btn:
-                startActivity(new Intent());
+                startActivity(newFacebookIntent(this.getPackageManager(),"https://www.facebook.com/traffickjam.georgia/"));
                 break;
 
             case R.id.tw_btn:
-                startActivity(new Intent());
+                launchTw();
+                //startActivity(new Intent());
                 break;
 
             case R.id.ig_btn:
-                startActivity(new Intent());
+                launchIg();
                 break;
         }
 
+    }
+
+    // Determines if facebook app is installed and either starts that or opens in the web browser
+    // http://stackoverflow.com/a/24547437/1048340
+    public static Intent newFacebookIntent(PackageManager pm, String url) {
+        Uri uri = Uri.parse(url);
+        try {
+            ApplicationInfo applicationInfo = pm.getApplicationInfo("com.facebook.katana", 0);
+            if (applicationInfo.enabled) {
+                uri = Uri.parse("fb://facewebmodal/f?href=" + url);
+            }
+        } catch (PackageManager.NameNotFoundException ignored) {
+        }
+        return new Intent(Intent.ACTION_VIEW, uri);
+    }
+
+
+    // http://stackoverflow.com/a/23511180
+    public void launchIg(){
+        Uri uri = Uri.parse("https://www.instagram.com/traffickjam.georgia/");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.instagram.android");
+
+        try {
+            startActivity(likeIng);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.instagram.com/traffickjam.georgia/")));
+        }
+    }
+
+    // http://stackoverflow.com/a/23511180
+    public void launchTw(){
+        Uri uri = Uri.parse("https://twitter.com/lxa_zetaomega");
+        Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
+
+        likeIng.setPackage("com.twitter.android");
+
+        try {
+            startActivity(likeIng);
+        } catch (ActivityNotFoundException e) {
+            startActivity(new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://twitter.com/lxa_zetaomega")));
+        }
     }
 
 }
