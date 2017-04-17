@@ -8,6 +8,34 @@
     android:orientation="vertical">
 
     <TextView
+        android:id="@+id/contact_hotlineText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:text="@string/xmltxt_contact_hotlineText"
+        />
+
+    <TextView
+        android:id="@+id/contact_hotlineNumText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:text="@string/xmltxt_contact_hotlineNumText"
+        android:onClick="onBtnClick"
+        />
+
+    <TextView
         android:id="@+id/contact_titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +44,7 @@
         android:textSize="18sp"
         android:paddingLeft="@dimen/activity_horizontal_margin"
         android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
         android:text="@string/xmltxt_contact_titleText"
         />
 

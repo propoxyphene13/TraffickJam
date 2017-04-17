@@ -58,6 +58,12 @@ public class Contact extends AppCompatActivity {
 
 
         switch (v.getId()) {
+            case R.id.contact_hotlineNumText:
+                Intent dialer = new Intent(Intent.ACTION_DIAL);
+                dialer.setData(Uri.parse("tel:18448423678"));
+                startActivity(dialer);
+                break;
+
             case R.id.fb_btn:
                 startActivity(newFacebookIntent(this.getPackageManager(),"https://www.facebook.com/traffickjam.georgia/"));
                 break;
@@ -106,7 +112,7 @@ public class Contact extends AppCompatActivity {
 
     // http://stackoverflow.com/a/23511180
     public void launchTw(){
-        Uri uri = Uri.parse("https://twitter.com/lxa_zetaomega");
+        Uri uri = Uri.parse("https://twitter.com/traffickjamgeorgia");
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
         likeIng.setPackage("com.twitter.android");
@@ -115,7 +121,7 @@ public class Contact extends AppCompatActivity {
             startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://twitter.com/lxa_zetaomega")));
+                    Uri.parse("https://twitter.com/traffickjamgeorgia")));
         }
     }
 
