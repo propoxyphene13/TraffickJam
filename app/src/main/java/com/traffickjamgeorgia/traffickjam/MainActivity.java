@@ -6,7 +6,6 @@ package com.traffickjamgeorgia.traffickjam;
 //    possibly replace fb code with the Ig/Tw code... and see about making a single method for all
 // Dont have a twitter account for traffick jam, make one for them? ask them to make one?
 //    whatever happens, need to change the current twitter link
-// Add app icon
 // Add landscape views plus any data saving necessary
 // Add accessibility helper text to all non-text fields
 // Remove temporary bits: button on main to Contact page
