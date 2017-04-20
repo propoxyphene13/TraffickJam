@@ -25,15 +25,20 @@ package com.traffickjamgeorgia.traffickjam;
 //    Code - ?
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.preference.PreferenceManager;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -59,8 +64,15 @@ public class MainActivity extends AppCompatActivity {
 
         //assign xml objects
         banner=(ImageView)findViewById(R.id.traffickJamBanner);
-        missionStatementTitle=(TextView)findViewById(R.id.missionStatementTitle);
-        missionStatement=(TextView)findViewById(R.id.missionStatement);
+
+// Can't assign these any longer because they are in pager
+//        missionStatementTitle=(TextView)findViewById(R.id.missionStatementTitle);
+//        missionStatement=(TextView)findViewById(R.id.missionStatement);
+
+
+        //ViewPager setup
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new CustomPagerAdapter(this));
 
 
         // Language start
@@ -86,10 +98,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume(){
         super.onResume();
 
-        //Set text within the onResume method to update for changes
-
-        missionStatementTitle.setText(R.string.xmltxt_main_missionStatementTitle);
-        missionStatement.setText(R.string.xmltxt_main_missionStatement1);
+//Set text within the onResume method to update for changes - superseded with app restart in settings
+//        missionStatementTitle.setText(R.string.xmltxt_main_missionStatementTitle);
+//        missionStatement.setText(R.string.xmltxt_main_missionStatement1);
 
     }
 
@@ -117,6 +128,74 @@ public class MainActivity extends AppCompatActivity {
     //temporary links to pages
     public void contacts(View v){
         startActivity(new Intent(this,Contact.class));
+    }
+
+
+    //Pager Enum
+    public enum CustomPagerEnum {
+
+        MISSION(R.string.mission, R.layout.mission_pager),
+        HELP(R.string.help, R.layout.help_pager);
+        //ORANGE(R.string.orange, R.layout.view_orange);
+
+        private int mTitleResId;
+        private int mLayoutResId;
+
+        CustomPagerEnum(int titleResId, int layoutResId) {
+            mTitleResId = titleResId;
+            mLayoutResId = layoutResId;
+        }
+
+        public int getTitleResId() {
+            return mTitleResId;
+        }
+
+        public int getLayoutResId() {
+            return mLayoutResId;
+        }
+
+    }
+
+
+    //PagerAdapter
+    public class CustomPagerAdapter extends PagerAdapter {
+
+        private Context mContext;
+
+        public CustomPagerAdapter(Context context) {
+            mContext = context;
+        }
+
+        @Override
+        public Object instantiateItem(ViewGroup collection, int position) {
+            CustomPagerEnum customPagerEnum = CustomPagerEnum.values()[position];
+            LayoutInflater inflater = LayoutInflater.from(mContext);
+            ViewGroup layout = (ViewGroup) inflater.inflate(customPagerEnum.getLayoutResId(), collection, false);
+            collection.addView(layout);
+            return layout;
+        }
+
+        @Override
+        public void destroyItem(ViewGroup collection, int position, Object view) {
+            collection.removeView((View) view);
+        }
+
+        @Override
+        public int getCount() {
+            return CustomPagerEnum.values().length;
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view == object;
+        }
+
+        @Override
+        public CharSequence getPageTitle(int position) {
+            CustomPagerEnum customPagerEnum = CustomPagerEnum.values()[position];
+            return mContext.getString(customPagerEnum.getTitleResId());
+        }
+
     }
 
 }

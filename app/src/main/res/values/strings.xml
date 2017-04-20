@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">TraffickJam</string>
 
+    <!-- Pager strings -->
+    <string name="mission">Mission</string>
+    <string name="help">Help</string>
+    <!-- End of Pager strings -->
+
 
     <string name="xmltxt_main_traffickJamBanner">Image of the Traffick Jam banner</string>
 

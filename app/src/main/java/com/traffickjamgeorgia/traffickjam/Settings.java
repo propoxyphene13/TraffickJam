@@ -2,6 +2,7 @@ package com.traffickjamgeorgia.traffickjam;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.preference.PreferenceFragment;
@@ -52,6 +53,16 @@ public class Settings extends AppCompatActivity {
         cfg.locale = locale;
         getResources().updateConfiguration(cfg,null);
 
+    }
+
+    //This forces languages to be observed by restarting main activity when the settings screen is closed
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+
+        Intent i = new Intent(this, MainActivity.class);
+        i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
     }
 
 
