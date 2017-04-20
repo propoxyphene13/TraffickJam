@@ -1,7 +1,7 @@
 package com.traffickjamgeorgia.traffickjam;
 
 // Todo:
-// FB twitter and instagram links on website are broken
+
 // Facebook, Instagram and Twitter code works when app not installed, test with apps installed
 //    possibly replace fb code with the Ig/Tw code... and see about making a single method for all
 // Dont have a twitter account for traffick jam, make one for them? ask them to make one?
@@ -12,7 +12,7 @@ package com.traffickjamgeorgia.traffickjam;
 // Figure out spacing for buttons in contact.xml... maybe
 
 // Bugs:
-// Damn menu inflator text wont update with locale change, screw it.
+// Damn menu inflator text wont update with locale change, screw it, restart app.
 
 
 // Assignment:

@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/contact_hotlineText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:gravity="center"
@@ -37,7 +37,7 @@
 
     <TextView
         android:id="@+id/contact_titleText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:gravity="center"
@@ -61,6 +61,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onBtnClick"
+                android:contentDescription="@string/xmltxt_contact_facebookButton"
                 android:src="@drawable/facebookimg" />
 
             <ImageButton
@@ -68,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onBtnClick"
+                android:contentDescription="@string/xmltxt_contact_twitterButton"
                 android:src="@drawable/twitterimg" />
 
             <ImageButton
@@ -75,6 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="onBtnClick"
+                android:contentDescription="@string/xmltxt_contact_instagramButton"
                 android:src="@drawable/instagramimg" />
 
         </TableRow>

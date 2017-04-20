@@ -41,6 +41,9 @@
 
     <string name="xmltxt_contact_titleText">To find out how you can help Traffick Jam drive out sex trafficking, please contact us.\nWe can use the help.</string>
     <string name="xmltxt_contact_hotlineText">Call the 24 Hr Sex Trafficking help hotline:</string>
+    <string name="xmltxt_contact_facebookButton">Image button for Traffick Jam Facebook page</string>
+    <string name="xmltxt_contact_instagramButton">Image button for Traffick Jam Instagram page</string>
+    <string name="xmltxt_contact_twitterButton">Image button for Traffick Jam Twitter page</string>
 
 
 </resources>
