@@ -23,4 +23,9 @@
 
 
     <string name="xmltxt_settings_sys">默认</string>
+
+    <string name="xmltxt_contact_facebookButton">Traffick Jam Facebook页面的图像按钮</string>
+    <string name="xmltxt_contact_hotlineText">致电24小时性贩运帮助热线：</string>
+    <string name="xmltxt_contact_instagramButton">Traffick Jam Instagram页面的图片按钮</string>
+    <string name="xmltxt_contact_titleText">请与我们联系，了解Traffick Jam如何阻止性贩运。我们可以使用帮助。</string>
 </resources>

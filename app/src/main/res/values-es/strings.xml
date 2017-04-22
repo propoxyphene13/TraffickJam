@@ -22,4 +22,9 @@
 
     <string name="xmltxt_settings_sys">Defecto</string>
 
+    <string name="xmltxt_contact_facebookButton">Botón de imagen para la página de Facebook de Traffick Jam</string>
+    <string name="xmltxt_contact_hotlineText">"Llame a la línea telefónica de ayuda para el tráfico sexual de 24 horas: "</string>
+    <string name="xmltxt_contact_instagramButton">Botón de imagen para la página de Traffick Jam Instagram</string>
+    <string name="xmltxt_contact_titleText">Para saber cómo puedes ayudar a Traffick Jam a expulsar el tráfico sexual, ponte en contacto con nosotros. Podemos usar la ayuda.</string>
+
 </resources>

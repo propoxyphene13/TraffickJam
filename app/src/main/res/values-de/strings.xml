@@ -21,4 +21,9 @@
     <string name="xmltxt_settings_languageSummary">Wählen Sie Ihre Sprache</string>
 
     <string name="xmltxt_settings_sys">Standard</string>
+
+    <string name="xmltxt_contact_facebookButton">Bildknopf für Traffick Jam Facebook Seite</string>
+    <string name="xmltxt_contact_hotlineText">" Rufen Sie die 24 Stunden Sex Trafficking Hilfe Hotline:"</string>
+    <string name="xmltxt_contact_instagramButton">Bildknopf für Traffick Jam Instagram Seite</string>
+    <string name="xmltxt_contact_titleText">Um herauszufinden, wie Sie helfen können Traffick Jam Stop Sex Trafficking, kontaktieren Sie uns bitte. Wir können die Hilfe benutzen.</string>
 </resources>

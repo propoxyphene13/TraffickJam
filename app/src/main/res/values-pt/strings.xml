@@ -22,4 +22,9 @@
 
     <string name="xmltxt_settings_sys">Padrão</string>
 
+    <string name="xmltxt_contact_facebookButton">Botão de imagem da página Facebook do Traffick Jam</string>
+    <string name="xmltxt_contact_hotlineText">" Ligue para a linha de ajuda de 24 horas para o Tráfico Sexual:"</string>
+    <string name="xmltxt_contact_instagramButton">Botão de imagem da página Instagram do Traffick Jam</string>
+    <string name="xmltxt_contact_titleText">Para descobrir como você pode ajudar Traffick Jam a expulsar o tráfico sexual, entre em contato conosco. Podemos usar a ajuda.</string>
+
 </resources>

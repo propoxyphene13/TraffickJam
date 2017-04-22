@@ -25,4 +25,9 @@
 
 
     <string name="xmltxt_settings_sys">デフォルト</string>
+
+    <string name="xmltxt_contact_facebookButton">Traffick Jam Facebookページの画像ボタン</string>
+    <string name="xmltxt_contact_hotlineText">24時間のセックストラフィッキングヘルプホットラインに電話する：</string>
+    <string name="xmltxt_contact_instagramButton">Traffick Jam Instagramページの画像ボタン</string>
+    <string name="xmltxt_contact_titleText">Traffick Jamが性的人身売買を追放するのを助ける方法を知るには、私たちに連絡してください。私たちは助けを使うことができます。</string>
 </resources>
