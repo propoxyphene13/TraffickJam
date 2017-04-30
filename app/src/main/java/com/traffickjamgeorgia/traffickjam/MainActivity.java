@@ -1,29 +1,5 @@
 package com.traffickjamgeorgia.traffickjam;
 
-// Todo:
-
-// Facebook, Instagram and Twitter code works when app not installed, test with apps installed
-//    possibly replace fb code with the Ig/Tw code... and see about making a single method for all
-// Dont have a twitter account for traffick jam, make one for them? ask them to make one?
-//    whatever happens, need to change the current twitter link
-// Add landscape views plus any data saving necessary
-// Add accessibility helper text to all non-text fields
-// Remove temporary bits: button on main to Contact page
-// Figure out spacing for buttons in contact.xml... maybe
-
-// Bugs:
-// Damn menu inflator text wont update with locale change, screw it, restart app.
-
-
-// Assignment:
-//    Functions on 4.03 and later - done
-//    Implements at least 3 activities with unique layout - 2 for sure
-//    At least two activities share data with intent passing - Contact passes ph# to dialer with URI
-//    Implements at least one fragment - Preference fragment for settings
-//    All strings loaded from strings xml - most, some non-display text is in .java
-//    Presentation - ?
-//    Code - ?
-
 
 import android.Manifest;
 import android.content.ActivityNotFoundException;

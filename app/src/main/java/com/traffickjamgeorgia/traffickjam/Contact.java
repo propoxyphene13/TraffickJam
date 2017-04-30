@@ -56,6 +56,11 @@ public class Contact extends AppCompatActivity {
     public void onBtnClick(View v) {
 
         switch (v.getId()) {
+            case R.id.traffickJamBanner:
+                Intent home_intent = new Intent(getBaseContext(), MainActivity.class);
+                startActivity(home_intent);
+                break;
+
             case R.id.contact_hotlineNumText:
                 Intent dialer = new Intent(Intent.ACTION_DIAL);
                 dialer.setData(Uri.parse(getString(R.string.call_num)));
