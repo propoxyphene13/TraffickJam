@@ -8,11 +8,25 @@
 
 
     <string name="xmltxt_main_traffickJamBanner">Image of the Traffick Jam banner</string>
+    <string name="NCMECimg">Image of NCMEC</string>
+    <string name="NFSimg">Image of NFS</string>
+    <string name="GEMSimg">Image of GEMS</string>
+    <string name="Jamimg">Image of Be The Jam</string>
+    <string name="HOPEimg">Image of HOPE</string>
+    <string name="slide1">First Image in Slideshow</string>
+    <string name="slide2">Second Image in Slideshow</string>
+    <string name="slide3">Third Image in Slideshow</string>
+    <string name="slide4">Fourth Image in Slideshow</string>
+    <string name="slide5">Fifth Image in Slideshow</string>
 
     <string name="xmltxt_main_missionStatementTitle">Our Mission</string>
     <string name="xmltxt_main_missionStatement1">Traffick Jam is a self-sustaining team of Mercer Marketing students whose purpose is to teach Macon how to drive out sex trafficking.</string>
     <string name="xmltxt_main_missionStatement2">Our program is based on an interactive curriculum that is split into four different sections: Realize, Recognize, React, and Raise Awareness.</string>
-
+    <string name="NCMEC_missionstatement">NetSmartz Workshop is an interactive, educational program of the National Center for Missing and Exploited Children® (NCMEC) that provides age-appropriate resources to help teach children how to be safer on- and offline.</string>
+    <string name="NFS_missionstatement">Not For Sale’s story started with an Indian restaurant in Berkeley, California, and it led us to building our first village in Northern Thailand. Sometimes, to do great things you must lead with your heart.</string>
+    <string name="GEMS_missionstatement">Girls Educational and Mentoring Services’ (GEMS) mission is to empower girls and young women, ages 12–24, who have experienced commercial sexual exploitation and domestic trafficking to exit the commercial sex industry and develop to their full potential</string>
+    <string name="BTJ_missionstatement">BeTheJam is a project of End Slavery Tennessee, a nonprofit organization that works to end slavery and to restore and advocate for the victims of human trafficking in Tennessee. Among the places we speak and train are many college campuses in Tennessee.</string>
+    <string name="HOPE_missionstatement">“H.O.P.E. Student Awareness Project” is a video curriculum for students, by students, empowering them to eradicate human trafficking. HOPE focuses on sex trafficking in the United States. Labor trafficking is also a large issue in both Oklahoma and the United States.</string>
 
     <string name="xmltxt_main_howCanYouHelpTitle">How Can You Help?</string>
     <string name="xmltxt_main_howCanYouHelp1">Traffick Jam’s work is funded by creating and selling objects of value and hosting events that resonate with people who are passionate about driving out sex trafficking.</string>
@@ -39,11 +53,38 @@
     <string name="xmltxt_contact_hotlineText">Call the 24 Hr Sex Trafficking help hotline:</string>
     <string name="xmltxt_contact_facebookButton">Image button for Traffick Jam Facebook page</string>
     <string name="xmltxt_contact_instagramButton">Image button for Traffick Jam Instagram page</string>
-
+    <string name="call_num">tel:18448423678</string>
     <!-- Strings below this need to be translated -->
 
 
     <string name="xmltxt_contact_twitterButton">Image button for Traffick Jam Twitter page</string>
 
+    <string name="blog">Blog</string>
+    <string name="youth"><u>Youth</u></string>
+    <string name="youth_leaders"><u>Youth Leaders</u></string>
+    <string name="ncmec">NCMEC</string>
+    <string name="nfs">NFS</string>
+    <string name="gems">GEMS</string>
+    <string name="btj">BETHEJAM</string>
+    <string name="hope">H.O.P.E.</string>
+
+    <string name="blog_link">https://www.traffickjamgeorgia.com/blog</string>
+    <string name="contact_link">https://www.traffickjamgeorgia.com/contact</string>
+
+    <string-array name="aboutus_array">
+        <item>History</item>
+        <item>Hallmarks of Program</item>
+    </string-array>
+
+    <string-array name="resources_array">
+        <item>Youth Leaders</item>
+        <item>Hallmarks of Program</item>
+        <item>Contact</item>
+    </string-array>
+
+    <string-array name="more_array">
+        <item>Fundraisers</item>
+        <item>Shop</item>
+    </string-array>
 
 </resources>

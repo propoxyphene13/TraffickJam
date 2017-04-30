@@ -25,26 +25,35 @@ package com.traffickjamgeorgia.traffickjam;
 //    Code - ?
 
 
+import android.Manifest;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.preference.PreferenceManager;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.support.v4.content.ContextCompat;
 import java.util.Locale;
 import java.util.logging.StreamHandler;
+import android.content.pm.PackageManager;
+import android.content.Intent;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -54,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageView banner;
     private TextView missionStatementTitle;
     private TextView missionStatement;
-
-
+    private TextView hotline, number;
+    private Spinner about_us, resources, more;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,6 +73,30 @@ public class MainActivity extends AppCompatActivity {
 
         //assign xml objects
         banner=(ImageView)findViewById(R.id.traffickJamBanner);
+        hotline = (TextView)findViewById(R.id.hotline);
+        number = (TextView)findViewById(R.id.number);
+
+        about_us = (Spinner) findViewById(R.id.aboutus_spinner);
+        resources = (Spinner) findViewById(R.id.resources_spinner);
+        more = (Spinner) findViewById(R.id.more_spinner);
+
+        String[] aboutus_array = getResources().getStringArray(R.array.aboutus_array);
+        String[] resources_array = getResources().getStringArray(R.array.resources_array);
+        String[] more_array = getResources().getStringArray(R.array.more_array);
+
+// Create an ArrayAdapter using the string array and a default spinner layout
+        ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, aboutus_array);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, resources_array);
+        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, more_array);
+
+// Apply the adapter to the spinner
+        about_us.setAdapter(adapter1);
+        resources.setAdapter(adapter2);
+        more.setAdapter(adapter3);
+
+        about_us.setOnItemSelectedListener(aboutusListener);
+        resources.setOnItemSelectedListener(resourcesListener);
+        more.setOnItemSelectedListener(moreListener);
 
 // Can't assign these any longer because they are in pager
 //        missionStatementTitle=(TextView)findViewById(R.id.missionStatementTitle);
@@ -92,6 +125,65 @@ public class MainActivity extends AppCompatActivity {
         cfg.locale = locale;
         getResources().updateConfiguration(cfg,null);
         //Language end
+    }
+
+    private Spinner.OnItemSelectedListener aboutusListener = new Spinner.OnItemSelectedListener(){
+
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+
+        }
+
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    };
+
+    private Spinner.OnItemSelectedListener resourcesListener = new Spinner.OnItemSelectedListener(){
+
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+
+        }
+
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    };
+
+    private Spinner.OnItemSelectedListener moreListener = new Spinner.OnItemSelectedListener(){
+
+        public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+
+        }
+
+        public void onNothingSelected(AdapterView<?> parent) {
+
+        }
+    };
+
+    public void goToBlog() {
+        goToUrl (getString(R.string.blog_link));
+    }
+
+    public void goToContact() {
+        goToUrl (getString(R.string.contact_link));
+    }
+
+    private void goToUrl (String url) {
+        Uri uriUrl = Uri.parse(url);
+        Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+        startActivity(launchBrowser);
+    }
+
+    public void onHotlineClk(){
+        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        try {
+            if ( ContextCompat.checkSelfPermission( this, Manifest.permission.CALL_PHONE ) != PackageManager.PERMISSION_GRANTED ) {
+                callIntent.setData(Uri.parse(getString(R.string.call_num)));
+                startActivity(callIntent);
+            }
+        } catch (ActivityNotFoundException activityException) {
+            Log.e("Calling a Phone Number", "Call failed", activityException);
+        }
     }
 
     @Override
