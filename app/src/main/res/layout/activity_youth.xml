@@ -11,7 +11,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context="com.traffickjamgeorgia.traffickjam.resources"
+        android:paddingBottom="32dp"
+        tools:context="com.traffickjamgeorgia.traffickjam.Youth"
         android:orientation="vertical">
 
 
@@ -28,79 +29,110 @@
             />
 
         <TextView
-            android:id="@+id/title_youth_leader"
+            android:id="@+id/title_youth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:paddingBottom="@dimen/activity_vertical_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingTop="16dp"
             android:textSize="30sp"
             android:textStyle="bold"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="@string/youth_leaders"
+            android:text="@string/youth"
             android:textColor="#000000"
             />
 
         <ImageView
-            android:id="@+id/traffickncmec"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/activity_vertical_margin"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:layout_gravity="center"
-            android:contentDescription="@string/NCMECimg"
-            android:src="@drawable/ncmec"
-            />
-
-        <TextView
-            android:id="@+id/NCMECmission"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/activity_vertical_margin"
-            android:textSize="18sp"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="@string/NCMEC_missionstatement"
-            />
-
-        <!-- Temporary button links to other activity pages -->
-        <Button
-            android:id="@+id/ncmecBtn"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:onClick="onBtnClick"
-
-            android:text="@string/ncmec"/>
-
-        <ImageView
-            android:id="@+id/trafficknfs"
+            android:id="@+id/traffickgems"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="16dp"
+            android:paddingBottom="@dimen/activity_vertical_margin"
             android:layout_gravity="center"
-            android:contentDescription="@string/NFSimg"
-            android:src="@drawable/nfs"
+            android:contentDescription="@string/GEMSimg"
+            android:src="@drawable/gems"
             />
 
         <TextView
-            android:id="@+id/NFSmission"
+            android:id="@+id/GEMSmission"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingBottom="@dimen/activity_vertical_margin"
             android:textSize="18sp"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
-            android:text="@string/NFS_missionstatement"
+            android:text="@string/GEMS_missionstatement"
             />
 
         <!-- Temporary button links to other activity pages -->
         <Button
-            android:id="@+id/nfsBtn"
+            android:id="@+id/gemsBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="onBtnClick"
+            android:text="@string/gems"/>
+
+        <ImageView
+            android:id="@+id/traffickBTJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/Jamimg"
+            android:src="@drawable/bethejam"
+            />
+
+        <TextView
+            android:id="@+id/BTJmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textSize="18sp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/BTJ_missionstatement"
+            />
+
+        <!-- Temporary button links to other activity pages -->
+        <Button
+            android:id="@+id/btjBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btjClick"
+            android:text="@string/btj"/>
+
+        <ImageView
+            android:id="@+id/traffickHOPE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="32dp"
+            android:paddingBottom="28dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/HOPEimg"
+            android:src="@drawable/hope"
+            />
+
+        <TextView
+            android:id="@+id/HOPEmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:textSize="18sp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text="@string/HOPE_missionstatement"
+            />
+
+        <!-- Temporary button links to other activity pages -->
+        <Button
+            android:id="@+id/hopeBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:onClick="onBtnClick"
-            android:text="@string/nfs"/>
+            android:text="@string/hope"/>
 
     </LinearLayout>
 </ScrollView>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.traffickjamgeorgia.traffickjam">
+
     <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
     <application
@@ -19,7 +20,12 @@
         </activity>
         <activity android:name=".Settings" />
         <activity android:name=".Contact" />
-        <activity android:name=".resources"></activity>
+        <activity android:name=".resources" />
+        <activity android:name=".History" />
+        <activity android:name=".Hallmarks" />
+        <activity android:name=".About" />
+        <activity android:name=".Youth" />
+        <activity android:name=".Shop"></activity>
     </application>
 
 </manifest>

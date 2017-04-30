@@ -31,8 +31,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.preference.PreferenceManager;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -43,6 +45,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -54,6 +58,7 @@ import java.util.Locale;
 import java.util.logging.StreamHandler;
 import android.content.pm.PackageManager;
 import android.content.Intent;
+import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,11 +70,27 @@ public class MainActivity extends AppCompatActivity {
     private TextView missionStatement;
     private TextView hotline, number;
     private Spinner about_us, resources, more;
+    private ViewFlipper slideshow;
+    Animation fade_in, fade_out;
+    int oncreate = 0;
+    int initialized = 0;
+    private boolean isDefault;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        slideshow = (ViewFlipper) this.findViewById(R.id.title_viewFlipper);
+        fade_in = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
+        fade_out = AnimationUtils.loadAnimation(this, android.R.anim.fade_out);
+        slideshow.setInAnimation(fade_in);
+        slideshow.setOutAnimation(fade_out);
+
+        //sets auto flipping
+        slideshow.setAutoStart(true);
+        slideshow.setFlipInterval(5000);
+        slideshow.startFlipping();
 
         //assign xml objects
         banner=(ImageView)findViewById(R.id.traffickJamBanner);
@@ -104,8 +125,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         //ViewPager setup
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-        viewPager.setAdapter(new CustomPagerAdapter(this));
+        //ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        //viewPager.setAdapter(new CustomPagerAdapter(this));
 
 
         // Language start
@@ -125,12 +146,27 @@ public class MainActivity extends AppCompatActivity {
         cfg.locale = locale;
         getResources().updateConfiguration(cfg,null);
         //Language end
+        isDefault = true;
     }
 
     private Spinner.OnItemSelectedListener aboutusListener = new Spinner.OnItemSelectedListener(){
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-
+            if(isDefault) {
+                isDefault = false;
+            }
+            else{
+                if (about_us.getItemAtPosition(pos).equals("About Us")) {
+                    Intent aboutus_intent = new Intent(getBaseContext(), About.class);
+                    startActivity(aboutus_intent);
+                } else if (about_us.getItemAtPosition(pos).equals("History")) {
+                    Intent history_intent = new Intent(getBaseContext(), History.class);
+                    startActivity(history_intent);
+                } else if (about_us.getItemAtPosition(pos).equals("Hallmarks of Program")) {
+                    Intent hallmarks_intent = new Intent(getBaseContext(), Hallmarks.class);
+                    startActivity(hallmarks_intent);
+                }
+            }
         }
 
         public void onNothingSelected(AdapterView<?> parent) {
@@ -141,31 +177,45 @@ public class MainActivity extends AppCompatActivity {
     private Spinner.OnItemSelectedListener resourcesListener = new Spinner.OnItemSelectedListener(){
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-
+            if(isDefault) {
+                isDefault = false;
+            }
+            else {
+                if (resources.getItemAtPosition(pos).equals("Youth Leaders")) {
+                    Intent youthleaders_intent = new Intent(getBaseContext(), resources.class);
+                    startActivity(youthleaders_intent);
+                } else if (resources.getItemAtPosition(pos).equals("Youth")) {
+                    Intent youth_intent = new Intent(getBaseContext(), Youth.class);
+                    startActivity(youth_intent);
+                } else if (resources.getItemAtPosition(pos).equals("Contact Us")) {
+                    Intent contact_intent = new Intent(getBaseContext(), Contact.class);
+                    startActivity(contact_intent);
+                }
+            }
         }
-
-        public void onNothingSelected(AdapterView<?> parent) {
-
-        }
+        public void onNothingSelected(AdapterView<?> parent) {}
     };
 
     private Spinner.OnItemSelectedListener moreListener = new Spinner.OnItemSelectedListener(){
 
         public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
-
+            if(isDefault) {
+                isDefault = false;
+            }
+            else {
+                if (more.getItemAtPosition(pos).equals("Fundraisers")) {
+                    goToUrl(getString(R.string.fundraiser_link));
+                } else if (more.getItemAtPosition(pos).equals("Shop")) {
+                    Intent shop_intent = new Intent(getBaseContext(), Shop.class);
+                    startActivity(shop_intent);
+                }
+            }
         }
-
-        public void onNothingSelected(AdapterView<?> parent) {
-
-        }
+        public void onNothingSelected(AdapterView<?> parent) {}
     };
 
-    public void goToBlog() {
+    public void blogClick(View vw){
         goToUrl (getString(R.string.blog_link));
-    }
-
-    public void goToContact() {
-        goToUrl (getString(R.string.contact_link));
     }
 
     private void goToUrl (String url) {
@@ -174,15 +224,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(launchBrowser);
     }
 
-    public void onHotlineClk(){
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
-        try {
-            if ( ContextCompat.checkSelfPermission( this, Manifest.permission.CALL_PHONE ) != PackageManager.PERMISSION_GRANTED ) {
-                callIntent.setData(Uri.parse(getString(R.string.call_num)));
-                startActivity(callIntent);
-            }
-        } catch (ActivityNotFoundException activityException) {
-            Log.e("Calling a Phone Number", "Call failed", activityException);
+    public void onHotlineClick(View vw){
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
+            Intent callIntent = new Intent(Intent.ACTION_CALL);
+            callIntent.setData(Uri.parse(getString(R.string.call_num)));
+            startActivity(callIntent);
         }
     }
 

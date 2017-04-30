@@ -18,6 +18,8 @@
     <string name="slide3">Third Image in Slideshow</string>
     <string name="slide4">Fourth Image in Slideshow</string>
     <string name="slide5">Fifth Image in Slideshow</string>
+    <string name="hallmarksimg">Hallmarks of  our Program Image</string>
+    <string name="aboutimg">About Us Image</string>
 
     <string name="xmltxt_main_missionStatementTitle">Our Mission</string>
     <string name="xmltxt_main_missionStatement1">Traffick Jam is a self-sustaining team of Mercer Marketing students whose purpose is to teach Macon how to drive out sex trafficking.</string>
@@ -53,7 +55,7 @@
     <string name="xmltxt_contact_hotlineText">Call the 24 Hr Sex Trafficking help hotline:</string>
     <string name="xmltxt_contact_facebookButton">Image button for Traffick Jam Facebook page</string>
     <string name="xmltxt_contact_instagramButton">Image button for Traffick Jam Instagram page</string>
-    <string name="call_num">tel:18448423678</string>
+    <string name="call_num">tel:8448423678</string>
     <!-- Strings below this need to be translated -->
 
 
@@ -62,27 +64,87 @@
     <string name="blog">Blog</string>
     <string name="youth"><u>Youth</u></string>
     <string name="youth_leaders"><u>Youth Leaders</u></string>
-    <string name="ncmec">NCMEC</string>
-    <string name="nfs">NFS</string>
-    <string name="gems">GEMS</string>
-    <string name="btj">BETHEJAM</string>
-    <string name="hope">H.O.P.E.</string>
+    <string name="ncmec">NCMEC Website</string>
+    <string name="nfs">NFS Website</string>
+    <string name="gems">GEMS Website</string>
+    <string name="btj">BETHEJAM Website</string>
+    <string name="hope">H.O.P.E. Website</string>
+    <string name="programhistory">History of our Program</string>
+    <string name="historydescription">Many times, when students and faculty think of Mercer’s “Research that Reaches Out”, they envision helping improve the lives of those in third world countries. However, reaching out can also be localized closer to home, where problems are often overlooked.  According to a February 2015 Macon Telegraph article, Georgia Cares, a state organization that serves trafficked minors, has had more than 1,100 referrals come in over the past five years and currently has active cases for 155 minors and suspected exploitation in 78 counties, including 26 instances in Bibb County.  Just recently, twenty-nine people were arrested by federal law enforcement in 13 cities across eight states including Middle Georgia on sex trafficking and other charges including trafficking minors.  It is also reported by the Shapiro Group that 12,400 people purchase sex in Georgia each month.\n\nAs a result of these alarming facts, Mercer’s senior marketing students, under the leadership of marketing professor Dr. Tammy Crutchfield have built a brand, Traffick Jam.   Traffick Jam was birthed in 2014 through the senior marketing capstone experience.  The students were tasked with taking the Anti-Trafficking education video “Chosen” to market.  After conducting qualitative customer research, they concluded that a video story such as Chosen was necessary but not sufficient.  Therefore, they decided to build their own prevention solution to educate teenagers in order to protect them from being trafficked.  These students have a desire to make a difference in a sustainable manner in our own local community.\n\nIn 2014 and 2015, we partnered with four after-school programs.  In those first two years, we raised over $1,800 and educated 240 students.  In 2016, we built a partnership with Southwest high school. We educated 240 freshmen students at Southwest and 50 students at Upward Bound and raised $3,400 to fund our own work.  This year, we are in four high schools and will be educating 1600 students.</string>
+    <string name="hallmarksdescription">1. Research-based, customer-focused, and dynamic. In other words, we are always seeking to enhance the effectiveness of our solution for students, parents, administrators, and teachers.\n\n2. We partner with boards of education and schools to implement the curriculum in school systems.\n\n3. The education is delivered by college students, the group that teens are most likely to hear and receive. This is the MAGIC!\n\n4. We place emphasis on both relationship building and education.  College students spend at least two-weeks with high school students hanging out before presenting the curriculum.\n\n5. The curriculum fits into the freshman high school experience in P.E. and Health curriculum.  The actual presentation fits into one class period so that time is not taken away from other instruction.\n\n6. The curriculum is personalized to the needs of male and, female students.  We break our education into two small groups with approximately 15-20 same gender students in each small group.\n\n7. College-to-teen and teen-to-teen conversation increases the likelihood of buy-in, adoption by teens.  The peer-to-peer component of education is essential to behavior change because young people’s tremendous influence by their peers.\n\n8. Teacher education is the most essential component.  Teachers are the first and last line of defense. Teachers learn  the  root causes of sex trafficking and its effect on the lives of victims, how and where it starts, who is the predator, and what are his/her devices of deceit,  the role of organized crime and street gangs in sex trafficking, how to we recognize the victim, and what to do when you do.\n\n9. Parent education undergirds student education.  We invite parents to a parent meeting in which we teach them what their students will learn.  We will continue to work on this aspect of the program as it is the most difficult target market to reach.\n\n10. We build and service a high school chapter of Traffick Jam.  We meet with the high school club once every two weeks.  The purpose of the club is to reinforce the Traffick Jam message, build relationship, focus on the student’s significance and future, and provide an outlet for high school students to discuss issues.\n\n11. We incorporate Georgia Cares Hotline, an online confidential mechanism for high schoolers to report and discuss issues related to sex trafficking.  This link is on our website and social media.</string>
+    <string name="ourmissiondescription">Traffick Jam is a brand and team of Mercer students whose purpose is to teach Macon\'s teens how to drive out sex trafficking.  Our goal is to prevent our youth from being sold for sexual purposes (trafficked).\n\nWe do this work on three fronts: Training those who work with youth, training parents of youth, and training youth themselves.\n\nTraffick Jam’s work is funded by partnering with community sponsors, creating and selling merchandise, and hosting events that resonate with people who are passionate about driving out sex trafficking.</string>
+    <string name="storedescription"><b>Each item</b> purchased in The Traffick Jam Store will go directly toward sex trafficking education for Macon\'s high school students. The proceeds from these items help Traffick Jam spread awareness about sex trafficking, helping many teens across Middle Georgia.\n\nIt costs <b>$5</b> to fully educate a student about the dangers of sex trafficking. </string>
+    <string name="braceletdescription">Image of Bracelet</string>
+    <string name="wristbanddescription">Image of Wristband</string>
+    <string name="headbanddescription">Image of Headband</string>
+    <string name="shirtdescription">Image of Shirt</string>
+    <string name="tankdescription">Image of Tank</string>
+    <string name="stickerdescription">Image of Sticker</string>
+
+    <string name="shirt_education">T-shirt = 2 students educated</string>
+    <string name="sticker_education">Sticker = 1 student educated</string>
+    <string name="headband_education">Headband = 2 students educated</string>
+    <string name="wristband_education">Wristband = 1 student educated</string>
+
+    <string name="tjbracelet">Traffick Jam Bracelet</string>
+    <string name="tjshirt">Traffick Jam T-Shirt</string>
+    <string name="tjtank">"Not For Sale" Barcode Tank-Top</string>
+    <string name="tjwristband">Eternal Threads Red Thread Bracelet</string>
+    <string name="tjheadband">Eternal Threads Lungi Headband</string>
+    <string name="tjdecal">Traffick Jam Decal</string>
+
+    <string name="twodollars">$2.00</string>
+    <string name="fivedollars">$5.00</string>
+    <string name="tendollars">$10.00</string>
+    <string name="fifteendollars">$15.00</string>
+
+    <string name="buybracelet">Buy Bracelet</string>
+    <string name="buyshirt">Buy T-Shirt</string>
+    <string name="buytank">Buy Tank-Top</string>
+    <string name="buywristband">Buy Red Thread Bracelet</string>
+    <string name="buyheadband">Buy Lungi Headband</string>
+    <string name="buydecal">Buy Decal</string>
+
+    <string name="history">History</string>
+    <string name="hallmarks">Hallmarks of our Program</string>
+    <string name="youthleaders">Youth Leaders</string>
+    <string name="youth_spinner">Youth</string>
+    <string name="contactus">Contact Us</string>
+    <string name="fundraisers">Fundraisers</string>
+    <string name="shop">Shop</string>
+    <string name="ourmission">Our Mission</string>
+    <string name="store">The Traffick Jam Store</string>
 
     <string name="blog_link">https://www.traffickjamgeorgia.com/blog</string>
     <string name="contact_link">https://www.traffickjamgeorgia.com/contact</string>
+    <string name="fundraiser_link">https://www.traffickjamgeorgia.com/events</string>
+    <string name="ncmec_link">http://www.netsmartz.org/Parents</string>
+    <string name="nfs_link">https://www.notforsalecampaign.org/</string>
+    <string name="gems_link">http://www.gems-girls.org/</string>
+    <string name="btj_link">http://www.bethejam.org/</string>
+    <string name="hope_link">http://hopestudentawareness.com/</string>
+    <string name="bracelet_link">https://www.traffickjamgeorgia.com/product-page/traffick-jam-bracelet</string>
+    <string name="shirt_link">https://www.traffickjamgeorgia.com/product-page/traffick-jam-t-shirt-1</string>
+    <string name="tank_link">https://www.traffickjamgeorgia.com/product-page/not-for-sale-tank-top</string>
+    <string name="wristband_link">https://www.traffickjamgeorgia.com/product-page/eternal-threads-red-thread-bracelet</string>
+    <string name="headband_link">https://www.traffickjamgeorgia.com/product-page/eternal-threads-lungi-headband</string>
+    <string name="decal_link">https://www.traffickjamgeorgia.com/product-page/traffick-jam-sticker</string>
 
     <string-array name="aboutus_array">
+        <item>About Us</item>
         <item>History</item>
         <item>Hallmarks of Program</item>
     </string-array>
 
     <string-array name="resources_array">
+        <item>Resources</item>
         <item>Youth Leaders</item>
-        <item>Hallmarks of Program</item>
-        <item>Contact</item>
+        <item>Youth</item>
+        <item>Contact Us</item>
     </string-array>
 
     <string-array name="more_array">
+        <item>More</item>
         <item>Fundraisers</item>
         <item>Shop</item>
     </string-array>

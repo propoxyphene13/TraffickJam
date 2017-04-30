@@ -32,7 +32,7 @@
             android:textColor="#000000"
             android:layout_gravity="center"
             android:clickable="true"
-            android:onClick="onHotlineClk"
+            android:onClick="onHotlineClick"
         />
 
         <TextView
@@ -43,7 +43,7 @@
             android:textColor="#000000"
             android:layout_gravity="center"
             android:clickable="true"
-            android:onClick="onNumClk"
+            android:onClick="onHotlineClick"
             />
     <!-- Using a table just in case we need to stick arrows on either side of the text -->
 
@@ -122,72 +122,48 @@
             </TableRow>
         </TableLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="16dp"
-            android:paddingRight="16dp">
-
-            <ViewFlipper
+        <ViewFlipper
+            android:layout_width="fill_parent"
+            android:layout_height="300dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:id="@+id/title_viewFlipper">
+            <ImageView
                 android:layout_width="fill_parent"
-                android:layout_height="300dp"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
-                android:id="@+id/viewFlipper">
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:scaleType="fitXY"
-                    android:id="@+id/imageView"
-                    android:src="@drawable/slideshow1"
-                    android:contentDescription="@string/slide1" />
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:scaleType="fitXY"
-                    android:id="@+id/imageView2"
-                    android:src="@drawable/slideshow2"
-                    android:contentDescription="@string/slide2"/>
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:scaleType="fitXY"
-                    android:id="@+id/imageView3"
-                    android:src="@drawable/slideshow3"
-                    android:contentDescription="@string/slide3"/>
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:scaleType="fitXY"
-                    android:id="@+id/imageView4"
-                    android:src="@drawable/slideshow4"
-                    android:contentDescription="@string/slide4"/>
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="fill_parent"
-                    android:scaleType="fitXY"
-                    android:id="@+id/imageView5"
-                    android:src="@drawable/slideshow5"
-                    android:contentDescription="@string/slide5"/>
-            </ViewFlipper>
-            <Button
-                android:id="@+id/next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Next"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"/>
-            <Button
-                android:id="@+id/previous"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Prev"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentBottom="true"
-                android:layout_alignTop="@+id/next"/>
-        </RelativeLayout>
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView"
+                android:src="@drawable/slideshow2"
+                android:contentDescription="@string/slide2" />
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView2"
+                android:src="@drawable/slideshow1"
+                android:contentDescription="@string/slide1"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView3"
+                android:src="@drawable/slideshow3"
+                android:contentDescription="@string/slide3"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView4"
+                android:src="@drawable/slideshow4"
+                android:contentDescription="@string/slide4"/>
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitXY"
+                android:id="@+id/imageView5"
+                android:src="@drawable/slideshow5"
+                android:contentDescription="@string/slide5"/>
+        </ViewFlipper>
     </LinearLayout>
 </ScrollView>
 

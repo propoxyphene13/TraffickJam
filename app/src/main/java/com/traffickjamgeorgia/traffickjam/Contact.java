@@ -55,14 +55,17 @@ public class Contact extends AppCompatActivity {
 
     public void onBtnClick(View v) {
 
-
-
         switch (v.getId()) {
             case R.id.contact_hotlineNumText:
                 Intent dialer = new Intent(Intent.ACTION_DIAL);
                 dialer.setData(Uri.parse("tel:18448423678"));
                 startActivity(dialer);
                 break;
+
+            case R.id.contactBtn:
+                Uri uriUrl = Uri.parse(getString(R.string.contact_link));
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
+                startActivity(launchBrowser);
 
             case R.id.fb_btn:
                 startActivity(newFacebookIntent(this.getPackageManager(),"https://www.facebook.com/traffickjam.georgia/"));

@@ -48,11 +48,18 @@
         android:text="@string/xmltxt_contact_titleText"
         />
 
-
+    <Button
+        android:id="@+id/contactBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contactus"
+        android:onClick="contactClick"
+        android:layout_gravity="center" />
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp">
 
         <TableRow>
 
