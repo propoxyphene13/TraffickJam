@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/contactus"
-        android:onClick="contactClick"
+        android:onClick="onBtnClick"
         android:layout_gravity="center" />
 
     <TableLayout
@@ -71,6 +71,7 @@
                 android:contentDescription="@string/xmltxt_contact_facebookButton"
                 android:src="@drawable/facebookimg" />
 
+            <!-- No Twitter - remove for now
             <ImageButton
                 android:id="@+id/tw_btn"
                 android:layout_width="match_parent"
@@ -78,6 +79,7 @@
                 android:onClick="onBtnClick"
                 android:contentDescription="@string/xmltxt_contact_twitterButton"
                 android:src="@drawable/twitterimg" />
+-->
 
             <ImageButton
                 android:id="@+id/ig_btn"

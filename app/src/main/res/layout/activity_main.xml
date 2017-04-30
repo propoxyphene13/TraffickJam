@@ -45,49 +45,9 @@
             android:clickable="true"
             android:onClick="onHotlineClick"
             />
-    <!-- Using a table just in case we need to stick arrows on either side of the text -->
 
 
-    <!-- Old text views, moved to individual layout files with View Pager replacement
 
-            <TextView
-                android:id="@+id/missionStatementTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:textAllCaps="true"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:text="@string/xmltxt_main_missionStatementTitle"
-                />
-
-            <TextView
-                android:id="@+id/missionStatement"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="18sp"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:text="@string/xmltxt_main_missionStatement1"
-                />
-    -->
-
-    <!--Use side-by-side in layout; here use pager
-
-            <TextView
-                android:id=""
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/xmltxt_main_howCanYouHelp1"
-                />
-
-            <TextView
-                android:id=""
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/xmltxt_main_currentEvents"
-                />
-    -->
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -111,6 +71,7 @@
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:textSize="9sp"
                     android:onClick="blogClick"
                     android:text="@string/blog"/>
 

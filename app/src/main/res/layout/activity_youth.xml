@@ -101,7 +101,7 @@
             android:id="@+id/btjBtn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:onClick="btjClick"
+            android:onClick="onBtnClick"
             android:text="@string/btj"/>
 
         <ImageView

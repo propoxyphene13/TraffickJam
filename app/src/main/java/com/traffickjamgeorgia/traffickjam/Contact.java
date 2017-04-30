@@ -58,7 +58,7 @@ public class Contact extends AppCompatActivity {
         switch (v.getId()) {
             case R.id.contact_hotlineNumText:
                 Intent dialer = new Intent(Intent.ACTION_DIAL);
-                dialer.setData(Uri.parse("tel:18448423678"));
+                dialer.setData(Uri.parse(getString(R.string.call_num)));
                 startActivity(dialer);
                 break;
 
@@ -66,16 +66,18 @@ public class Contact extends AppCompatActivity {
                 Uri uriUrl = Uri.parse(getString(R.string.contact_link));
                 Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(launchBrowser);
-
-            case R.id.fb_btn:
-                startActivity(newFacebookIntent(this.getPackageManager(),"https://www.facebook.com/traffickjam.georgia/"));
                 break;
 
-            case R.id.tw_btn:
+            case R.id.fb_btn:
+                startActivity(newFacebookIntent(this.getPackageManager(),getString(R.string.fb_link)));
+                break;
+
+            //No Twitter - remove for now
+/*            case R.id.tw_btn:
                 launchTw();
                 //startActivity(new Intent());
                 break;
-
+*/
             case R.id.ig_btn:
                 launchIg();
                 break;
@@ -100,7 +102,7 @@ public class Contact extends AppCompatActivity {
 
     // http://stackoverflow.com/a/23511180
     public void launchIg(){
-        Uri uri = Uri.parse("https://www.instagram.com/traffickjam.georgia/");
+        Uri uri = Uri.parse(getString(R.string.ig_link));
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
         likeIng.setPackage("com.instagram.android");
@@ -109,12 +111,12 @@ public class Contact extends AppCompatActivity {
             startActivity(likeIng);
         } catch (ActivityNotFoundException e) {
             startActivity(new Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://www.instagram.com/traffickjam.georgia/")));
+                    Uri.parse(getString(R.string.ig_link))));
         }
     }
 
-    // http://stackoverflow.com/a/23511180
-    public void launchTw(){
+    // no twitter account - remove for now
+/*    public void launchTw(){
         Uri uri = Uri.parse("https://twitter.com/traffickjamgeorgia");
         Intent likeIng = new Intent(Intent.ACTION_VIEW, uri);
 
@@ -127,5 +129,5 @@ public class Contact extends AppCompatActivity {
                     Uri.parse("https://twitter.com/traffickjamgeorgia")));
         }
     }
-
+*/
 }

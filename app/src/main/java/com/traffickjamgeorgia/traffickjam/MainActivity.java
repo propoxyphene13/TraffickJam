@@ -156,17 +156,18 @@ public class MainActivity extends AppCompatActivity {
                 isDefault = false;
             }
             else{
-                if (about_us.getItemAtPosition(pos).equals("About Us")) {
+                if (about_us.getItemAtPosition(pos).equals(getString(R.string.array_aboutus))) {
                     Intent aboutus_intent = new Intent(getBaseContext(), About.class);
                     startActivity(aboutus_intent);
-                } else if (about_us.getItemAtPosition(pos).equals("History")) {
+                } else if (about_us.getItemAtPosition(pos).equals(getString(R.string.array_history))) {
                     Intent history_intent = new Intent(getBaseContext(), History.class);
                     startActivity(history_intent);
-                } else if (about_us.getItemAtPosition(pos).equals("Hallmarks of Program")) {
+                } else if (about_us.getItemAtPosition(pos).equals(getString(R.string.array_hallmarks))) {
                     Intent hallmarks_intent = new Intent(getBaseContext(), Hallmarks.class);
                     startActivity(hallmarks_intent);
                 }
             }
+            ((TextView)parent.getChildAt(0)).setTextSize(9);
         }
 
         public void onNothingSelected(AdapterView<?> parent) {
@@ -181,17 +182,18 @@ public class MainActivity extends AppCompatActivity {
                 isDefault = false;
             }
             else {
-                if (resources.getItemAtPosition(pos).equals("Youth Leaders")) {
+                if (resources.getItemAtPosition(pos).equals(getString(R.string.array_youthleaders))) {
                     Intent youthleaders_intent = new Intent(getBaseContext(), resources.class);
                     startActivity(youthleaders_intent);
-                } else if (resources.getItemAtPosition(pos).equals("Youth")) {
+                } else if (resources.getItemAtPosition(pos).equals(getString(R.string.array_youth))) {
                     Intent youth_intent = new Intent(getBaseContext(), Youth.class);
                     startActivity(youth_intent);
-                } else if (resources.getItemAtPosition(pos).equals("Contact Us")) {
+                } else if (resources.getItemAtPosition(pos).equals(getString(R.string.array_contact))) {
                     Intent contact_intent = new Intent(getBaseContext(), Contact.class);
                     startActivity(contact_intent);
                 }
             }
+            ((TextView)parent.getChildAt(0)).setTextSize(9);
         }
         public void onNothingSelected(AdapterView<?> parent) {}
     };
@@ -203,13 +205,14 @@ public class MainActivity extends AppCompatActivity {
                 isDefault = false;
             }
             else {
-                if (more.getItemAtPosition(pos).equals("Fundraisers")) {
+                if (more.getItemAtPosition(pos).equals(getString(R.string.array_fund))) {
                     goToUrl(getString(R.string.fundraiser_link));
-                } else if (more.getItemAtPosition(pos).equals("Shop")) {
+                } else if (more.getItemAtPosition(pos).equals(getString(R.string.array_shop))) {
                     Intent shop_intent = new Intent(getBaseContext(), Shop.class);
                     startActivity(shop_intent);
                 }
             }
+            ((TextView)parent.getChildAt(0)).setTextSize(9);
         }
         public void onNothingSelected(AdapterView<?> parent) {}
     };
@@ -229,6 +232,11 @@ public class MainActivity extends AppCompatActivity {
             Intent callIntent = new Intent(Intent.ACTION_CALL);
             callIntent.setData(Uri.parse(getString(R.string.call_num)));
             startActivity(callIntent);
+        }
+        else {
+            Intent dialer = new Intent(Intent.ACTION_DIAL);
+            dialer.setData(Uri.parse(getString(R.string.call_num)));
+            startActivity(dialer);
         }
     }
 
@@ -263,11 +271,8 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    //temporary links to pages
-    public void contacts(View v){
-        startActivity(new Intent(this,Contact.class));
-    }
 
+/* Pager Adapter Removed, code left for future use if needed
 
     //Pager Enum
     public enum CustomPagerEnum {
@@ -335,6 +340,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-
+ */
 }
 

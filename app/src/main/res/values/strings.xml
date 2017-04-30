@@ -55,7 +55,9 @@
     <string name="xmltxt_contact_hotlineText">Call the 24 Hr Sex Trafficking help hotline:</string>
     <string name="xmltxt_contact_facebookButton">Image button for Traffick Jam Facebook page</string>
     <string name="xmltxt_contact_instagramButton">Image button for Traffick Jam Instagram page</string>
-    <string name="call_num">tel:8448423678</string>
+    <string name="call_num">tel:18448423678</string>
+
+
     <!-- Strings below this need to be translated -->
 
 
@@ -129,24 +131,21 @@
     <string name="wristband_link">https://www.traffickjamgeorgia.com/product-page/eternal-threads-red-thread-bracelet</string>
     <string name="headband_link">https://www.traffickjamgeorgia.com/product-page/eternal-threads-lungi-headband</string>
     <string name="decal_link">https://www.traffickjamgeorgia.com/product-page/traffick-jam-sticker</string>
+    <string name="ig_link">https://www.instagram.com/traffickjam.georgia/</string>
+    <string name="fb_link">https://www.facebook.com/traffickjam.georgia/</string>
 
-    <string-array name="aboutus_array">
-        <item>About Us</item>
-        <item>History</item>
-        <item>Hallmarks of Program</item>
-    </string-array>
+    <string name="array_aboutus">About Us</string>
+    <string name="array_history">History</string>
+    <string name="array_hallmarks">Hallmarks of Program</string>
 
-    <string-array name="resources_array">
-        <item>Resources</item>
-        <item>Youth Leaders</item>
-        <item>Youth</item>
-        <item>Contact Us</item>
-    </string-array>
+    <string name="array_resources">Resources</string>
+    <string name="array_youthleaders">Youth Leaders</string>
+    <string name="array_youth">Youth</string>
+    <string name="array_contact">Contact Us</string>
 
-    <string-array name="more_array">
-        <item>More</item>
-        <item>Fundraisers</item>
-        <item>Shop</item>
-    </string-array>
+    <string name="array_more">More</string>
+    <string name="array_fund">Fundraisers</string>
+    <string name="array_shop">Shop</string>
+
 
 </resources>

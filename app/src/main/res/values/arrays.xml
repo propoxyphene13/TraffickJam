@@ -21,4 +21,23 @@
         <item name="jpn">ja</item>
     </string-array>
 
+    <string-array name="aboutus_array">
+        <item>@string/array_aboutus</item>
+        <item>@string/array_history</item>
+        <item>@string/array_hallmarks</item>
+    </string-array>
+
+    <string-array name="resources_array">
+        <item>@string/array_resources</item>
+        <item>@string/array_youthleaders</item>
+        <item>@string/array_youth</item>
+        <item>@string/array_contact</item>
+    </string-array>
+
+    <string-array name="more_array">
+        <item>@string/array_more</item>
+        <item>@string/array_fund</item>
+        <item>@string/array_shop</item>
+    </string-array>
+
 </resources>
