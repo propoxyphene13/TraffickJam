@@ -226,14 +226,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
+/*This is the Settings Menu, uncomment this block to add it
     public boolean onCreateOptionsMenu(Menu menu) {
 
         // Inflate the menu; this adds items to the application bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
